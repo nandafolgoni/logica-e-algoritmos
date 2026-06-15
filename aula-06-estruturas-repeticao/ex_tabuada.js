@@ -1,4 +1,4 @@
-// rodas rpm install prompt-sync
+// rodas npm install prompt-sync
 
 // Importar o módulo (Para rodar algoritmos no terminal)
 const prompt = require('prompt-sync')()
@@ -8,9 +8,10 @@ console.log('--- Tabuada ---')
 console.log("")
 
 // Perguntar (Qual tabuada gerar)
-let numero = Number (prompt('Digite um número para gerar a tabuada'))
+let numero = Number (prompt('Digite um número para gerar a tabuada: '))
+console.log("")
 
 // Laço para gerar a tabuada
 for (let i = 1; i <= 10; i++){
-    console.log(numero + "x" + i + "=" + (numero * i))
+    console.log(numero + " x " + i + " = " + (numero * i))
 }
